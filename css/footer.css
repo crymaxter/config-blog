@@ -1,0 +1,15 @@
+/* Oculta la licencia */
+  .jslicense {
+    display: none;
+  }
+  
+  /* Centra el texto del span */
+  .m-footer-copyright {
+    text-align: center;
+  }
+  
+  /* Oculta los 2 spans */
+  .m-footer span:nth-child(2),
+  .m-footer span:nth-child(3) {
+    display: none;
+  }
