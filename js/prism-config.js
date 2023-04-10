@@ -14,6 +14,12 @@ script6.src = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/pr
 var script7 = document.createElement('script');
 script7.src = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-docker.min.js';
 
+// Función que se ejecuta cuando se han cargado todos los scripts
+function onLoad() {
+  // Aquí se puede utilizar el objeto Prism sin errores
+  Prism.highlightAll();
+}
+
 // Agregar elementos de script al final del body
 document.body.appendChild(script1);
 document.body.appendChild(script2);
@@ -22,3 +28,12 @@ document.body.appendChild(script4);
 document.body.appendChild(script5);
 document.body.appendChild(script6);
 document.body.appendChild(script7);
+
+// Agregar evento load a cada script
+script1.addEventListener('load', onLoad);
+script2.addEventListener('load', onLoad);
+script3.addEventListener('load', onLoad);
+script4.addEventListener('load', onLoad);
+script5.addEventListener('load', onLoad);
+script6.addEventListener('load', onLoad);
+script7.addEventListener('load', onLoad);
