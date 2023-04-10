@@ -3,7 +3,7 @@
   margin: 2em 0;
 }
 
-  .code .download-btn {
+.code .download-btn {
   position: absolute;
   top: 0;
   left: 50%;
@@ -17,16 +17,33 @@
   transition: all 0.3s ease;
   font-family: sans-serif;
 }
+
 .code .download-btn:hover {
   background-color: #ffffff;
   color: #4CAF50;
 }
-    
+
 .code pre {
   margin: 0;
   padding: 1em;
   overflow: auto;
+  position: relative;
 }
+
+.code pre::-webkit-scrollbar {
+  width: 10px;
+}
+
+.code pre::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+.code pre::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
 .code pre code {
   display: block;
   font-size: 90%;
@@ -53,9 +70,11 @@
   border-radius: 3px;
   border: 1px solid #4CAF50;
 }
+
 .code pre code .hljs {
   font-size: 100%;
 }
+
 .code .copy-btn {
   position: absolute;
   top: 0;
@@ -71,10 +90,12 @@
   font-family: sans-serif;
   border-radius: 3px;
 }
+
 .code .copy-btn:hover {
   background-color: #ffffff;
   color: #4CAF50;
 }
+
 .code .copy-btn.copied {
   background-color: #ddd;
   border-color: #ddd;
