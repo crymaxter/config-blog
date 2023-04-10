@@ -1,0 +1,82 @@
+.code {
+  position: relative;
+  margin: 2em 0;
+}
+
+  .code .download-btn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 3px;
+  padding: 0.25em 0.5em;
+  font-size: 80%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+}
+.code .download-btn:hover {
+  background-color: #ffffff;
+  color: #4CAF50;
+}
+    
+.code pre {
+  margin: 0;
+  padding: 1em;
+  overflow: auto;
+}
+.code pre code {
+  display: block;
+  font-size: 90%;
+  line-height: 1.45;
+  background-color: #1F1F1F; /* Color de fondo para el código */
+  color: #E6E6E6; /* Color del texto para el código */
+  border-radius: 3px;
+  padding: 1em;
+  border: 1px solid #2B2B2B;
+  position: relative;
+  overflow-x: auto;
+}
+
+.code pre code::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4CAF50; /* Color de fondo para el lenguaje */
+  color: #ffffff; /* Color del texto para el lenguaje */
+  font-size: 80%; 
+  font-family: sans-serif;
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+  border: 1px solid #4CAF50;
+}
+.code pre code .hljs {
+  font-size: 100%;
+}
+.code .copy-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  background-color: #4CAF50;
+  border: 1px solid #4CAF50;
+  border-left: none;
+  font-size: 80%;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  border-radius: 3px;
+}
+.code .copy-btn:hover {
+  background-color: #ffffff;
+  color: #4CAF50;
+}
+.code .copy-btn.copied {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #555;
+}
