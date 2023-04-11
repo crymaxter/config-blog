@@ -28,9 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
           document.body.removeChild(a);
           URL.revokeObjectURL(url);
         });
-      });
-        
-      $('.code pre.ps').perfectScrollbar(); // agregamos esta línea
+      });        
     }
 
     copyAndDownloadCode();
