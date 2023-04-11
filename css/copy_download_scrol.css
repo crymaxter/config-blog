@@ -39,7 +39,7 @@
   padding: 1em;
   border: 1px solid #2B2B2B;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .code pre code::before {
@@ -85,19 +85,4 @@
   background-color: #ddd;
   border-color: #ddd;
   color: #555;
-}
-
-/* Estilos para el scroll */
-.code pre.ps {
-  overflow-x: scroll;
-}
-
-.code .ps__rail-x {
-  height: 8px; /* altura del scrollbar */
-  background-color: #f1f1f1; /* color del fondo del scrollbar */
-}
-
-.code .ps__thumb-x {
-  background-color: #888; /* color del scrollbar */
-  border-radius: 10px; /* borde redondeado */
 }
