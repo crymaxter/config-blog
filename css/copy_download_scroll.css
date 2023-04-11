@@ -26,22 +26,7 @@
 .code pre {
   margin: 0;
   padding: 1em;
-  overflow: auto;
   position: relative;
-}
-
-.code pre::-webkit-scrollbar {
-  width: 10px;
-}
-
-.code pre::-webkit-scrollbar-track {
-  background-color: #F5F5F5;
-  border-radius: 5px;
-}
-
-.code pre::-webkit-scrollbar-thumb {
-  background-color: #4CAF50;
-  border-radius: 5px;
 }
 
 .code pre code {
@@ -54,7 +39,7 @@
   padding: 1em;
   border: 1px solid #2B2B2B;
   position: relative;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .code pre code::before {
@@ -100,4 +85,19 @@
   background-color: #ddd;
   border-color: #ddd;
   color: #555;
+}
+
+/* Estilos para el scroll */
+.code pre.ps {
+  overflow-x: scroll;
+}
+
+.code .ps__rail-x {
+  height: 8px; /* altura del scrollbar */
+  background-color: #f1f1f1; /* color del fondo del scrollbar */
+}
+
+.code .ps__thumb-x {
+  background-color: #888; /* color del scrollbar */
+  border-radius: 10px; /* borde redondeado */
 }
